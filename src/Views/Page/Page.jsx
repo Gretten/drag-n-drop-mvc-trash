@@ -3,8 +3,8 @@ import './Page.css'
 
 export const Page = ({children}) => {
     return (
-        <div class="page-container">
-            <div class="todo-container">
+        <div className="page-container">
+            <div className="todo-container">
                 {children}
             </div>
         </div>
