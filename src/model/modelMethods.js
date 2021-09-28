@@ -1,6 +1,6 @@
 import { model } from './model'
 
-let todoModel = model;
+let [...todoModel] = model;
 
 const itemExists = id => !!todoModel.find(modelItem => modelItem.id === id);
 
