@@ -1,9 +1,12 @@
 import React from 'react'
+import './Page.css'
 
-export const Page = () => {
+export const Page = ({children}) => {
     return (
-        <div>
-            
+        <div className="page-container">
+            <div className="todo-container">
+                {children}
+            </div>
         </div>
     )
 }
