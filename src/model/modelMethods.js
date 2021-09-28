@@ -1,24 +1,24 @@
 import { model } from './model'
 
-let [...todoModel] = model;
+let [...currentModel] = model;
 
-const itemExists = id => !!todoModel.find(modelItem => modelItem.id === id);
+const itemExists = id => !!currentModel.find(modelItem => modelItem.id === id);
 
-export const getTodoModel = () => todoModel;
+export const getModel = () => currentModel;
 
-export const setTodoItem = item => itemExists(item.id) ? model.push(item) : null;
+export const setItem = item => itemExists(item.id) ? model.push(item) : null;
 
-export const deleteTodoItem = id => {
+export const deleteItem = id => {
     if(itemExists(id)) {
-        return todoModel = todoModel.filter(currentModelItem => currentModelItem.id !== id)
+        return currentModel = currentModel.filter(currentModelItem => currentModelItem.id !== id)
     } else {
         return null;
     }
 }
 
-export const updateTodoItem = (item) => {
+export const updateItem = (item) => {
     if(itemExists(item.id)) {
-        todoModel = todoModel.map(currentItem => {
+        currentModel = currentModel.map(currentItem => {
             return currentItem.id === item.id ? currentItem = item : currentItem
         })
     } return null;
