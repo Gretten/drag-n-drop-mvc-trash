@@ -1,9 +1,12 @@
 import { Page } from './Page'
+import { TodoBox } from './TodoBox';
 
 function App() {
   return (
     <div className="App">
-      <Page />
+      <Page>
+        <TodoBox />
+      </Page>
     </div>
   );
 }
