@@ -1,7 +1,7 @@
 import * as modelMethods from '../model/modelMethods'
 
 export const getAllTodos = () => {
-
+    
 }
 
 export const addNewTodo = todoItem => {
