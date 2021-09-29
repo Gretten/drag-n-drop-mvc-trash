@@ -1,15 +1,15 @@
-.page-container {
+.pageContainer {
     display: flex;
     justify-content: center;
 }
 
-.todo-container {    
+.todoContainer {    
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     max-width: 1024px;
     width: 100%;
-    border: 1px solid;
     height: 100vh;
 
 }
